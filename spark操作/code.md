@@ -6,4 +6,8 @@ bin/run-example SparkPi
 
 val textFile = sc.textFile("file:///usr/local/spark/README.md")
 
+
+./bin/spark-submit --class "SparkOperateMySQL" ~/IdeaProjects/SparkMySQL/out/artifacts/SparkMySQL_jar/SparkMySQL.jar 
+
+
 ```

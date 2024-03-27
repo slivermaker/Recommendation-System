@@ -1,0 +1,2344 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "spark-mysql",
+        "directory": "/home/silversaya/Recommendation-System/sparkSql1",
+        "workspaceDir": "/home/silversaya/Recommendation-System/sparkSql1",
+        "sources": [
+            "/home/silversaya/Recommendation-System/sparkSql1/src/main/scala"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/home/silversaya/Recommendation-System/sparkSql1/target/classes",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/avro/avro-mapred/1.7.7/avro-mapred-1.7.7-hadoop2.jar",
+            "/home/silversaya/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7.jar",
+            "/home/silversaya/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7.jar",
+            "/home/silversaya/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7-tests.jar",
+            "/home/silversaya/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar",
+            "/home/silversaya/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar",
+            "/home/silversaya/.m2/repository/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0.jar",
+            "/home/silversaya/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar",
+            "/home/silversaya/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar",
+            "/home/silversaya/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar",
+            "/home/silversaya/.m2/repository/com/twitter/chill-java/0.8.0/chill-java-0.8.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-client/2.2.0/hadoop-client-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar",
+            "/home/silversaya/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar",
+            "/home/silversaya/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar",
+            "/home/silversaya/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar",
+            "/home/silversaya/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar",
+            "/home/silversaya/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar",
+            "/home/silversaya/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar",
+            "/home/silversaya/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar",
+            "/home/silversaya/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar",
+            "/home/silversaya/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar",
+            "/home/silversaya/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar",
+            "/home/silversaya/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar",
+            "/home/silversaya/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.jar",
+            "/home/silversaya/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar",
+            "/home/silversaya/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar",
+            "/home/silversaya/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-launcher_2.11/2.1.0/spark-launcher_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar",
+            "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-network-shuffle_2.11/2.1.0/spark-network-shuffle_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1.jar",
+            "/home/silversaya/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar",
+            "/home/silversaya/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar",
+            "/home/silversaya/.m2/repository/org/apache/curator/curator-recipes/2.4.0/curator-recipes-2.4.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/curator/curator-framework/2.4.0/curator-framework-2.4.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/curator/curator-client/2.4.0/curator-client-2.4.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/zookeeper/zookeeper/3.4.5/zookeeper-3.4.5.jar",
+            "/home/silversaya/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar",
+            "/home/silversaya/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar",
+            "/home/silversaya/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar",
+            "/home/silversaya/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar",
+            "/home/silversaya/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar",
+            "/home/silversaya/.m2/repository/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.jar",
+            "/home/silversaya/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16.jar",
+            "/home/silversaya/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar",
+            "/home/silversaya/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar",
+            "/home/silversaya/.m2/repository/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3.jar",
+            "/home/silversaya/.m2/repository/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar",
+            "/home/silversaya/.m2/repository/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.jar",
+            "/home/silversaya/.m2/repository/org/roaringbitmap/RoaringBitmap/0.5.11/RoaringBitmap-0.5.11.jar",
+            "/home/silversaya/.m2/repository/commons-net/commons-net/2.2/commons-net-2.2.jar",
+            "/home/silversaya/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar",
+            "/home/silversaya/.m2/repository/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11.jar",
+            "/home/silversaya/.m2/repository/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.jar",
+            "/home/silversaya/.m2/repository/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.jar",
+            "/home/silversaya/.m2/repository/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar",
+            "/home/silversaya/.m2/repository/org/scala-lang/scalap/2.11.0/scalap-2.11.0.jar",
+            "/home/silversaya/.m2/repository/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0.jar",
+            "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2.jar",
+            "/home/silversaya/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34.jar",
+            "/home/silversaya/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2.jar",
+            "/home/silversaya/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2.jar",
+            "/home/silversaya/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2.jar",
+            "/home/silversaya/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2.jar",
+            "/home/silversaya/.m2/repository/io/netty/netty-all/4.0.42.Final/netty-all-4.0.42.Final.jar",
+            "/home/silversaya/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar",
+            "/home/silversaya/.m2/repository/com/clearspring/analytics/stream/2.7.0/stream-2.7.0.jar",
+            "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar",
+            "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-jvm/3.1.2/metrics-jvm-3.1.2.jar",
+            "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.2/metrics-json-3.1.2.jar",
+            "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-graphite/3.1.2/metrics-graphite-3.1.2.jar",
+            "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.jar",
+            "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.jar",
+            "/home/silversaya/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.5/jackson-module-scala_2.11-2.6.5.jar",
+            "/home/silversaya/.m2/repository/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.jar",
+            "/home/silversaya/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5.jar",
+            "/home/silversaya/.m2/repository/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar",
+            "/home/silversaya/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar",
+            "/home/silversaya/.m2/repository/net/razorvine/pyrolite/4.13/pyrolite-4.13.jar",
+            "/home/silversaya/.m2/repository/net/sf/py4j/py4j/0.10.4/py4j-0.10.4.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-tags_2.11/2.1.0/spark-tags_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6.jar",
+            "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar",
+            "/home/silversaya/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar",
+            "/home/silversaya/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/com/univocity/univocity-parsers/2.2.1/univocity-parsers-2.2.1.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-sketch_2.11/2.1.0/spark-sketch_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.jar",
+            "/home/silversaya/.m2/repository/org/codehaus/janino/janino/3.0.0/janino-3.0.0.jar",
+            "/home/silversaya/.m2/repository/org/codehaus/janino/commons-compiler/3.0.0/commons-compiler-3.0.0.jar",
+            "/home/silversaya/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar",
+            "/home/silversaya/.m2/repository/org/apache/parquet/parquet-column/1.8.1/parquet-column-1.8.1.jar",
+            "/home/silversaya/.m2/repository/org/apache/parquet/parquet-common/1.8.1/parquet-common-1.8.1.jar",
+            "/home/silversaya/.m2/repository/org/apache/parquet/parquet-encoding/1.8.1/parquet-encoding-1.8.1.jar",
+            "/home/silversaya/.m2/repository/org/apache/parquet/parquet-hadoop/1.8.1/parquet-hadoop-1.8.1.jar",
+            "/home/silversaya/.m2/repository/org/apache/parquet/parquet-format/2.3.0-incubating/parquet-format-2.3.0-incubating.jar",
+            "/home/silversaya/.m2/repository/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1.jar",
+            "/home/silversaya/.m2/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar",
+            "/home/silversaya/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"
+        ],
+        "out": "/home/silversaya/Recommendation-System/sparkSql1/target",
+        "classesDir": "/home/silversaya/Recommendation-System/sparkSql1/target/classes",
+        "resources": [
+            "/home/silversaya/Recommendation-System/sparkSql1/src/main/resources"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.11.8",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/silversaya/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar",
+                "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar",
+                "/home/silversaya/.m2/repository/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.jar",
+                "/home/silversaya/.m2/repository/jline/jline/2.12.1/jline-2.12.1.jar",
+                "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar",
+                "/home/silversaya/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar"
+            ],
+            "setup": {
+                "order": "java->scala",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-g",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/jdk1.8.0_172/jre",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.5",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.avro",
+                    "name": "avro-mapred",
+                    "version": "1.7.7",
+                    "artifacts": [
+                        {
+                            "name": "avro-mapred",
+                            "classifier": "hadoop2",
+                            "path": "/home/silversaya/.m2/repository/org/apache/avro/avro-mapred/1.7.7/avro-mapred-1.7.7-hadoop2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-catalyst_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-catalyst_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-catalyst_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-catalyst_2.11/2.1.0/spark-catalyst_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.6.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.dropwizard.metrics",
+                    "name": "metrics-json",
+                    "version": "3.1.2",
+                    "artifacts": [
+                        {
+                            "name": "metrics-json",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.2/metrics-json-3.1.2.jar"
+                        },
+                        {
+                            "name": "metrics-json",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.2/metrics-json-3.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.6",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "/home/silversaya/.m2/repository/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "aopalliance",
+                    "name": "aopalliance",
+                    "version": "1.0",
+                    "artifacts": [
+                        {
+                            "name": "aopalliance",
+                            "path": "/home/silversaya/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"
+                        },
+                        {
+                            "name": "aopalliance",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.parquet",
+                    "name": "parquet-common",
+                    "version": "1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "parquet-common",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-common/1.8.1/parquet-common-1.8.1.jar"
+                        },
+                        {
+                            "name": "parquet-common",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-common/1.8.1/parquet-common-1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.jackson",
+                    "name": "jackson-mapper-asl",
+                    "version": "1.9.13",
+                    "artifacts": [
+                        {
+                            "name": "jackson-mapper-asl",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar"
+                        },
+                        {
+                            "name": "jackson-mapper-asl",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-configuration",
+                    "name": "commons-configuration",
+                    "version": "1.6",
+                    "artifacts": [
+                        {
+                            "name": "commons-configuration",
+                            "path": "/home/silversaya/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar"
+                        },
+                        {
+                            "name": "commons-configuration",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jersey.core",
+                    "name": "jersey-client",
+                    "version": "2.22.2",
+                    "artifacts": [
+                        {
+                            "name": "jersey-client",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2.jar"
+                        },
+                        {
+                            "name": "jersey-client",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-compiler",
+                    "version": "2.11.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-compiler",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0.jar"
+                        },
+                        {
+                            "name": "scala-compiler",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-jobclient",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-jobclient",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-jobclient",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-app",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-app",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-app",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.janino",
+                    "name": "janino",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "janino",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/janino/janino/3.0.0/janino-3.0.0.jar"
+                        },
+                        {
+                            "name": "janino",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/janino/janino/3.0.0/janino-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.11",
+                    "version": "1.0.2",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.janino",
+                    "name": "commons-compiler",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-compiler",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/janino/commons-compiler/3.0.0/commons-compiler-3.0.0.jar"
+                        },
+                        {
+                            "name": "commons-compiler",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/janino/commons-compiler/3.0.0/commons-compiler-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-beanutils",
+                    "name": "commons-beanutils-core",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-beanutils-core",
+                            "path": "/home/silversaya/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.inject",
+                    "name": "javax.inject",
+                    "version": "1",
+                    "artifacts": [
+                        {
+                            "name": "javax.inject",
+                            "path": "/home/silversaya/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-core_2.11",
+                    "version": "3.2.11",
+                    "artifacts": [
+                        {
+                            "name": "json4s-core_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.jar"
+                        },
+                        {
+                            "name": "json4s-core_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.dropwizard.metrics",
+                    "name": "metrics-graphite",
+                    "version": "3.1.2",
+                    "artifacts": [
+                        {
+                            "name": "metrics-graphite",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-graphite/3.1.2/metrics-graphite-3.1.2.jar"
+                        },
+                        {
+                            "name": "metrics-graphite",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-graphite/3.1.2/metrics-graphite-3.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.11",
+                    "version": "2.2.6",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6.jar"
+                        },
+                        {
+                            "name": "scalatest_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-lang",
+                    "name": "commons-lang",
+                    "version": "2.5",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang",
+                            "path": "/home/silversaya/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar"
+                        },
+                        {
+                            "name": "commons-lang",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.mortbay.jetty",
+                    "name": "jetty-util",
+                    "version": "6.1.26",
+                    "artifacts": [
+                        {
+                            "name": "jetty-util",
+                            "path": "/home/silversaya/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar"
+                        },
+                        {
+                            "name": "jetty-util",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.hk2.external",
+                    "name": "javax.inject",
+                    "version": "2.4.0-b34",
+                    "artifacts": [
+                        {
+                            "name": "javax.inject",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jersey.media",
+                    "name": "jersey-media-jaxb",
+                    "version": "2.22.2",
+                    "artifacts": [
+                        {
+                            "name": "jersey-media-jaxb",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2.jar"
+                        },
+                        {
+                            "name": "jersey-media-jaxb",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-yarn-api",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-yarn-api",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-yarn-api",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.univocity",
+                    "name": "univocity-parsers",
+                    "version": "2.2.1",
+                    "artifacts": [
+                        {
+                            "name": "univocity-parsers",
+                            "path": "/home/silversaya/.m2/repository/com/univocity/univocity-parsers/2.2.1/univocity-parsers-2.2.1.jar"
+                        },
+                        {
+                            "name": "univocity-parsers",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/univocity/univocity-parsers/2.2.1/univocity-parsers-2.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "log4j",
+                    "name": "log4j",
+                    "version": "1.2.17",
+                    "artifacts": [
+                        {
+                            "name": "log4j",
+                            "path": "/home/silversaya/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar"
+                        },
+                        {
+                            "name": "log4j",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "2.1",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/home/silversaya/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.zookeeper",
+                    "name": "zookeeper",
+                    "version": "3.4.5",
+                    "artifacts": [
+                        {
+                            "name": "zookeeper",
+                            "path": "/home/silversaya/.m2/repository/org/apache/zookeeper/zookeeper/3.4.5/zookeeper-3.4.5.jar"
+                        },
+                        {
+                            "name": "zookeeper",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/zookeeper/zookeeper/3.4.5/zookeeper-3.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.protobuf",
+                    "name": "protobuf-java",
+                    "version": "2.5.0",
+                    "artifacts": [
+                        {
+                            "name": "protobuf-java",
+                            "path": "/home/silversaya/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar"
+                        },
+                        {
+                            "name": "protobuf-java",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty",
+                    "version": "3.8.0.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty",
+                            "path": "/home/silversaya/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar"
+                        },
+                        {
+                            "name": "netty",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/io/netty/netty/3.8.0.Final/netty-3.8.0.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.avro",
+                    "name": "avro",
+                    "version": "1.7.7",
+                    "artifacts": [
+                        {
+                            "name": "avro",
+                            "path": "/home/silversaya/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7.jar"
+                        },
+                        {
+                            "name": "avro",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jcl-over-slf4j",
+                    "version": "1.7.16",
+                    "artifacts": [
+                        {
+                            "name": "jcl-over-slf4j",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16.jar"
+                        },
+                        {
+                            "name": "jcl-over-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-tags_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-tags_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-tags_2.11/2.1.0/spark-tags_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-tags_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-tags_2.11/2.1.0/spark-tags_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "mysql",
+                    "name": "mysql-connector-java",
+                    "version": "5.1.40",
+                    "artifacts": [
+                        {
+                            "name": "mysql-connector-java",
+                            "path": "/home/silversaya/.m2/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar"
+                        },
+                        {
+                            "name": "mysql-connector-java",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.dropwizard.metrics",
+                    "name": "metrics-jvm",
+                    "version": "3.1.2",
+                    "artifacts": [
+                        {
+                            "name": "metrics-jvm",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-jvm/3.1.2/metrics-jvm-3.1.2.jar"
+                        },
+                        {
+                            "name": "metrics-jvm",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-jvm/3.1.2/metrics-jvm-3.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-launcher_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-launcher_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-launcher_2.11/2.1.0/spark-launcher_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-launcher_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-launcher_2.11/2.1.0/spark-launcher_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-codec",
+                    "name": "commons-codec",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "commons-codec",
+                            "path": "/home/silversaya/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar"
+                        },
+                        {
+                            "name": "commons-codec",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.hk2",
+                    "name": "hk2-api",
+                    "version": "2.4.0-b34",
+                    "artifacts": [
+                        {
+                            "name": "hk2-api",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34.jar"
+                        },
+                        {
+                            "name": "hk2-api",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.jpountz.lz4",
+                    "name": "lz4",
+                    "version": "1.3.0",
+                    "artifacts": [
+                        {
+                            "name": "lz4",
+                            "path": "/home/silversaya/.m2/repository/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.jar"
+                        },
+                        {
+                            "name": "lz4",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.tukaani",
+                    "name": "xz",
+                    "version": "1.0",
+                    "artifacts": [
+                        {
+                            "name": "xz",
+                            "path": "/home/silversaya/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar"
+                        },
+                        {
+                            "name": "xz",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/tukaani/xz/1.0/xz-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jersey.core",
+                    "name": "jersey-server",
+                    "version": "2.22.2",
+                    "artifacts": [
+                        {
+                            "name": "jersey-server",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2.jar"
+                        },
+                        {
+                            "name": "jersey-server",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "chill_2.11",
+                    "version": "0.8.0",
+                    "artifacts": [
+                        {
+                            "name": "chill_2.11",
+                            "path": "/home/silversaya/.m2/repository/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0.jar"
+                        },
+                        {
+                            "name": "chill_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.annotation",
+                    "name": "javax.annotation-api",
+                    "version": "1.2",
+                    "artifacts": [
+                        {
+                            "name": "javax.annotation-api",
+                            "path": "/home/silversaya/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar"
+                        },
+                        {
+                            "name": "javax.annotation-api",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.hk2.external",
+                    "name": "aopalliance-repackaged",
+                    "version": "2.4.0-b34",
+                    "artifacts": [
+                        {
+                            "name": "aopalliance-repackaged",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.jar"
+                        },
+                        {
+                            "name": "aopalliance-repackaged",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "oro",
+                    "name": "oro",
+                    "version": "2.0.8",
+                    "artifacts": [
+                        {
+                            "name": "oro",
+                            "path": "/home/silversaya/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar"
+                        },
+                        {
+                            "name": "oro",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/oro/oro/2.0.8/oro-2.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.curator",
+                    "name": "curator-recipes",
+                    "version": "2.4.0",
+                    "artifacts": [
+                        {
+                            "name": "curator-recipes",
+                            "path": "/home/silversaya/.m2/repository/org/apache/curator/curator-recipes/2.4.0/curator-recipes-2.4.0.jar"
+                        },
+                        {
+                            "name": "curator-recipes",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/curator/curator-recipes/2.4.0/curator-recipes-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-yarn-server-common",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-yarn-server-common",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-yarn-server-common",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.validation",
+                    "name": "validation-api",
+                    "version": "1.1.0.Final",
+                    "artifacts": [
+                        {
+                            "name": "validation-api",
+                            "path": "/home/silversaya/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"
+                        },
+                        {
+                            "name": "validation-api",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-network-common_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-network-common_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-network-common_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-network-common_2.11/2.1.0/spark-network-common_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-sql_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-sql_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-sql_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.ws.rs",
+                    "name": "javax.ws.rs-api",
+                    "version": "2.0.1",
+                    "artifacts": [
+                        {
+                            "name": "javax.ws.rs-api",
+                            "path": "/home/silversaya/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar"
+                        },
+                        {
+                            "name": "javax.ws.rs-api",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.curator",
+                    "name": "curator-framework",
+                    "version": "2.4.0",
+                    "artifacts": [
+                        {
+                            "name": "curator-framework",
+                            "path": "/home/silversaya/.m2/repository/org/apache/curator/curator-framework/2.4.0/curator-framework-2.4.0.jar"
+                        },
+                        {
+                            "name": "curator-framework",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/curator/curator-framework/2.4.0/curator-framework-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-annotations",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-annotations",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-annotations",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-beanutils",
+                    "name": "commons-beanutils",
+                    "version": "1.7.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-beanutils",
+                            "path": "/home/silversaya/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar"
+                        },
+                        {
+                            "name": "commons-beanutils",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.ivy",
+                    "name": "ivy",
+                    "version": "2.4.0",
+                    "artifacts": [
+                        {
+                            "name": "ivy",
+                            "path": "/home/silversaya/.m2/repository/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar"
+                        },
+                        {
+                            "name": "ivy",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/ivy/ivy/2.4.0/ivy-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jersey.containers",
+                    "name": "jersey-container-servlet",
+                    "version": "2.22.2",
+                    "artifacts": [
+                        {
+                            "name": "jersey-container-servlet",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2.jar"
+                        },
+                        {
+                            "name": "jersey-container-servlet",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-crypto",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-crypto",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar"
+                        },
+                        {
+                            "name": "commons-crypto",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.parquet",
+                    "name": "parquet-hadoop",
+                    "version": "1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "parquet-hadoop",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-hadoop/1.8.1/parquet-hadoop-1.8.1.jar"
+                        },
+                        {
+                            "name": "parquet-hadoop",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-hadoop/1.8.1/parquet-hadoop-1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "xmlenc",
+                    "name": "xmlenc",
+                    "version": "0.52",
+                    "artifacts": [
+                        {
+                            "name": "xmlenc",
+                            "path": "/home/silversaya/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-hdfs",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-hdfs",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-hdfs",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware",
+                    "name": "minlog",
+                    "version": "1.3.0",
+                    "artifacts": [
+                        {
+                            "name": "minlog",
+                            "path": "/home/silversaya/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar"
+                        },
+                        {
+                            "name": "minlog",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.javassist",
+                    "name": "javassist",
+                    "version": "3.18.1-GA",
+                    "artifacts": [
+                        {
+                            "name": "javassist",
+                            "path": "/home/silversaya/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar"
+                        },
+                        {
+                            "name": "javassist",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.py4j",
+                    "name": "py4j",
+                    "version": "0.10.4",
+                    "artifacts": [
+                        {
+                            "name": "py4j",
+                            "path": "/home/silversaya/.m2/repository/net/sf/py4j/py4j/0.10.4/py4j-0.10.4.jar"
+                        },
+                        {
+                            "name": "py4j",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/net/sf/py4j/py4j/0.10.4/py4j-0.10.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.dropwizard.metrics",
+                    "name": "metrics-core",
+                    "version": "3.1.2",
+                    "artifacts": [
+                        {
+                            "name": "metrics-core",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar"
+                        },
+                        {
+                            "name": "metrics-core",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.jackson",
+                    "name": "jackson-core-asl",
+                    "version": "1.9.13",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core-asl",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar"
+                        },
+                        {
+                            "name": "jackson-core-asl",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-net",
+                    "name": "commons-net",
+                    "version": "2.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-net",
+                            "path": "/home/silversaya/.m2/repository/commons-net/commons-net/2.2/commons-net-2.2.jar"
+                        },
+                        {
+                            "name": "commons-net",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-net/commons-net/2.2/commons-net-2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-yarn-common",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-yarn-common",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-yarn-common",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware",
+                    "name": "kryo-shaded",
+                    "version": "3.0.3",
+                    "artifacts": [
+                        {
+                            "name": "kryo-shaded",
+                            "path": "/home/silversaya/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar"
+                        },
+                        {
+                            "name": "kryo-shaded",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "1.3.9",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/home/silversaya/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.hk2",
+                    "name": "osgi-resource-locator",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "osgi-resource-locator",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar"
+                        },
+                        {
+                            "name": "osgi-resource-locator",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-core_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-core_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-core_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.16",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.inject",
+                    "name": "guice",
+                    "version": "3.0",
+                    "artifacts": [
+                        {
+                            "name": "guice",
+                            "path": "/home/silversaya/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar"
+                        },
+                        {
+                            "name": "guice",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/google/inject/guice/3.0/guice-3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-all",
+                    "version": "4.0.42.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-all",
+                            "path": "/home/silversaya/.m2/repository/io/netty/netty-all/4.0.42.Final/netty-all-4.0.42.Final.jar"
+                        },
+                        {
+                            "name": "netty-all",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/io/netty/netty-all/4.0.42.Final/netty-all-4.0.42.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-scala_2.11",
+                    "version": "2.6.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-scala_2.11",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.5/jackson-module-scala_2.11-2.6.5.jar"
+                        },
+                        {
+                            "name": "jackson-module-scala_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.5/jackson-module-scala_2.11-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.servlet",
+                    "name": "javax.servlet-api",
+                    "version": "3.1.0",
+                    "artifacts": [
+                        {
+                            "name": "javax.servlet-api",
+                            "path": "/home/silversaya/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"
+                        },
+                        {
+                            "name": "javax.servlet-api",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-digester",
+                    "name": "commons-digester",
+                    "version": "1.8",
+                    "artifacts": [
+                        {
+                            "name": "commons-digester",
+                            "path": "/home/silversaya/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar"
+                        },
+                        {
+                            "name": "commons-digester",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.parquet",
+                    "name": "parquet-format",
+                    "version": "2.3.0-incubating",
+                    "artifacts": [
+                        {
+                            "name": "parquet-format",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-format/2.3.0-incubating/parquet-format-2.3.0-incubating.jar"
+                        },
+                        {
+                            "name": "parquet-format",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-format/2.3.0-incubating/parquet-format-2.3.0-incubating-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-core",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-core",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-core",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.java.dev.jets3t",
+                    "name": "jets3t",
+                    "version": "0.7.1",
+                    "artifacts": [
+                        {
+                            "name": "jets3t",
+                            "path": "/home/silversaya/.m2/repository/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1.jar"
+                        },
+                        {
+                            "name": "jets3t",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jul-to-slf4j",
+                    "version": "1.7.16",
+                    "artifacts": [
+                        {
+                            "name": "jul-to-slf4j",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.jar"
+                        },
+                        {
+                            "name": "jul-to-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-ast_2.11",
+                    "version": "3.2.11",
+                    "artifacts": [
+                        {
+                            "name": "json4s-ast_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.jar"
+                        },
+                        {
+                            "name": "json4s-ast_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.hk2",
+                    "name": "hk2-locator",
+                    "version": "2.4.0-b34",
+                    "artifacts": [
+                        {
+                            "name": "hk2-locator",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34.jar"
+                        },
+                        {
+                            "name": "hk2-locator",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.curator",
+                    "name": "curator-client",
+                    "version": "2.4.0",
+                    "artifacts": [
+                        {
+                            "name": "curator-client",
+                            "path": "/home/silversaya/.m2/repository/org/apache/curator/curator-client/2.4.0/curator-client-2.4.0.jar"
+                        },
+                        {
+                            "name": "curator-client",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/curator/curator-client/2.4.0/curator-client-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.6.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "chill-java",
+                    "version": "0.8.0",
+                    "artifacts": [
+                        {
+                            "name": "chill-java",
+                            "path": "/home/silversaya/.m2/repository/com/twitter/chill-java/0.8.0/chill-java-0.8.0.jar"
+                        },
+                        {
+                            "name": "chill-java",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/twitter/chill-java/0.8.0/chill-java-0.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.hk2",
+                    "name": "hk2-utils",
+                    "version": "2.4.0-b34",
+                    "artifacts": [
+                        {
+                            "name": "hk2-utils",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.jar"
+                        },
+                        {
+                            "name": "hk2-utils",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jersey.core",
+                    "name": "jersey-common",
+                    "version": "2.22.2",
+                    "artifacts": [
+                        {
+                            "name": "jersey-common",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2.jar"
+                        },
+                        {
+                            "name": "jersey-common",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-httpclient",
+                    "name": "commons-httpclient",
+                    "version": "3.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-httpclient",
+                            "path": "/home/silversaya/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar"
+                        },
+                        {
+                            "name": "commons-httpclient",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-common",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-common",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-common",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.avro",
+                    "name": "avro-ipc",
+                    "version": "1.7.7",
+                    "artifacts": [
+                        {
+                            "name": "avro-ipc",
+                            "classifier": "tests",
+                            "path": "/home/silversaya/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7-tests.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.11",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-math3",
+                    "version": "3.4.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-math3",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar"
+                        },
+                        {
+                            "name": "commons-math3",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.roaringbitmap",
+                    "name": "RoaringBitmap",
+                    "version": "0.5.11",
+                    "artifacts": [
+                        {
+                            "name": "RoaringBitmap",
+                            "path": "/home/silversaya/.m2/repository/org/roaringbitmap/RoaringBitmap/0.5.11/RoaringBitmap-0.5.11.jar"
+                        },
+                        {
+                            "name": "RoaringBitmap",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/roaringbitmap/RoaringBitmap/0.5.11/RoaringBitmap-0.5.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-paranamer",
+                    "version": "2.6.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-paranamer",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5.jar"
+                        },
+                        {
+                            "name": "jackson-module-paranamer",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.razorvine",
+                    "name": "pyrolite",
+                    "version": "4.13",
+                    "artifacts": [
+                        {
+                            "name": "pyrolite",
+                            "path": "/home/silversaya/.m2/repository/net/razorvine/pyrolite/4.13/pyrolite-4.13.jar"
+                        },
+                        {
+                            "name": "pyrolite",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/net/razorvine/pyrolite/4.13/pyrolite-4.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-cli",
+                    "name": "commons-cli",
+                    "version": "1.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-cli",
+                            "path": "/home/silversaya/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar"
+                        },
+                        {
+                            "name": "commons-cli",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-shuffle",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-shuffle",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-shuffle",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.11.8",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-math",
+                    "version": "2.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-math",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar"
+                        },
+                        {
+                            "name": "commons-math",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-io",
+                    "name": "commons-io",
+                    "version": "2.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-io",
+                            "path": "/home/silversaya/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar"
+                        },
+                        {
+                            "name": "commons-io",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.xbean",
+                    "name": "xbean-asm5-shaded",
+                    "version": "4.4",
+                    "artifacts": [
+                        {
+                            "name": "xbean-asm5-shaded",
+                            "path": "/home/silversaya/.m2/repository/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4.jar"
+                        },
+                        {
+                            "name": "xbean-asm5-shaded",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.6.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.fusesource.leveldbjni",
+                    "name": "leveldbjni-all",
+                    "version": "1.8",
+                    "artifacts": [
+                        {
+                            "name": "leveldbjni-all",
+                            "path": "/home/silversaya/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar"
+                        },
+                        {
+                            "name": "leveldbjni-all",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jersey.containers",
+                    "name": "jersey-container-servlet-core",
+                    "version": "2.22.2",
+                    "artifacts": [
+                        {
+                            "name": "jersey-container-servlet-core",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2.jar"
+                        },
+                        {
+                            "name": "jersey-container-servlet-core",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-common",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-common",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-common",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xerial.snappy",
+                    "name": "snappy-java",
+                    "version": "1.1.2.6",
+                    "artifacts": [
+                        {
+                            "name": "snappy-java",
+                            "path": "/home/silversaya/.m2/repository/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar"
+                        },
+                        {
+                            "name": "snappy-java",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.ning",
+                    "name": "compress-lzf",
+                    "version": "1.0.3",
+                    "artifacts": [
+                        {
+                            "name": "compress-lzf",
+                            "path": "/home/silversaya/.m2/repository/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3.jar"
+                        },
+                        {
+                            "name": "compress-lzf",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-client",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-client",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-client/2.2.0/hadoop-client-2.2.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.11.7",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "14.0.1",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "path": "/home/silversaya/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-compress",
+                    "version": "1.4.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-compress",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar"
+                        },
+                        {
+                            "name": "commons-compress",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-sketch_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-sketch_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-sketch_2.11/2.1.0/spark-sketch_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-sketch_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-sketch_2.11/2.1.0/spark-sketch_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.antlr",
+                    "name": "antlr4-runtime",
+                    "version": "4.5.3",
+                    "artifacts": [
+                        {
+                            "name": "antlr4-runtime",
+                            "path": "/home/silversaya/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar"
+                        },
+                        {
+                            "name": "antlr4-runtime",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-unsafe_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-unsafe_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-unsafe_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-unsafe_2.11/2.1.0/spark-unsafe_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-log4j12",
+                    "version": "1.7.16",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-log4j12",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar"
+                        },
+                        {
+                            "name": "slf4j-log4j12",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-collections",
+                    "name": "commons-collections",
+                    "version": "3.2.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-collections",
+                            "path": "/home/silversaya/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"
+                        },
+                        {
+                            "name": "commons-collections",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.parquet",
+                    "name": "parquet-jackson",
+                    "version": "1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "parquet-jackson",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1.jar"
+                        },
+                        {
+                            "name": "parquet-jackson",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-network-shuffle_2.11",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "spark-network-shuffle_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-network-shuffle_2.11/2.1.0/spark-network-shuffle_2.11-2.1.0.jar"
+                        },
+                        {
+                            "name": "spark-network-shuffle_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/spark/spark-network-shuffle_2.11/2.1.0/spark-network-shuffle_2.11-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-yarn-client",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-yarn-client",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-yarn-client",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.avro",
+                    "name": "avro-ipc",
+                    "version": "1.7.7",
+                    "artifacts": [
+                        {
+                            "name": "avro-ipc",
+                            "path": "/home/silversaya/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7.jar"
+                        },
+                        {
+                            "name": "avro-ipc",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.spark-project.spark",
+                    "name": "unused",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "unused",
+                            "path": "/home/silversaya/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar"
+                        },
+                        {
+                            "name": "unused",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jersey.bundles.repackaged",
+                    "name": "jersey-guava",
+                    "version": "2.22.2",
+                    "artifacts": [
+                        {
+                            "name": "jersey-guava",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2.jar"
+                        },
+                        {
+                            "name": "jersey-guava",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scalap",
+                    "version": "2.11.0",
+                    "artifacts": [
+                        {
+                            "name": "scalap",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scalap/2.11.0/scalap-2.11.0.jar"
+                        },
+                        {
+                            "name": "scalap",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/scala-lang/scalap/2.11.0/scalap-2.11.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.parquet",
+                    "name": "parquet-column",
+                    "version": "1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "parquet-column",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-column/1.8.1/parquet-column-1.8.1.jar"
+                        },
+                        {
+                            "name": "parquet-column",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-column/1.8.1/parquet-column-1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-auth",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-auth",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-auth",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-jackson_2.11",
+                    "version": "3.2.11",
+                    "artifacts": [
+                        {
+                            "name": "json4s-jackson_2.11",
+                            "path": "/home/silversaya/.m2/repository/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11.jar"
+                        },
+                        {
+                            "name": "json4s-jackson_2.11",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.clearspring.analytics",
+                    "name": "stream",
+                    "version": "2.7.0",
+                    "artifacts": [
+                        {
+                            "name": "stream",
+                            "path": "/home/silversaya/.m2/repository/com/clearspring/analytics/stream/2.7.0/stream-2.7.0.jar"
+                        },
+                        {
+                            "name": "stream",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/com/clearspring/analytics/stream/2.7.0/stream-2.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.parquet",
+                    "name": "parquet-encoding",
+                    "version": "1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "parquet-encoding",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-encoding/1.8.1/parquet-encoding-1.8.1.jar"
+                        },
+                        {
+                            "name": "parquet-encoding",
+                            "classifier": "sources",
+                            "path": "/home/silversaya/.m2/repository/org/apache/parquet/parquet-encoding/1.8.1/parquet-encoding-1.8.1-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
